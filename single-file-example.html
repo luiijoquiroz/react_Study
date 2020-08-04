@@ -12,17 +12,11 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-        function tick() {
-            const element = (
-                <div>
-                    <h1>Hello World!</h1>
-                    <h2>It is {new Date().toLocaleTimeString()}.</h2>
-                </div>
-            )
-            ReactDOM.render( element, document.getElementById('root')
-      );
-        }
-        setInterval(tick, 1000);
+      const element = <Welcome name="Luis" />;
+      ReactDOM.render(
+          element,
+          document.getElementById("root")
+      )
     </script>
     <!--
       Note: this page is a great way to try React but it's not suitable for production.
